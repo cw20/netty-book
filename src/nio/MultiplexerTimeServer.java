@@ -135,7 +135,7 @@ public class MultiplexerTimeServer implements Runnable
 					readBuffer.get(bytes);
 					String body = new String(bytes, "UTF-8");
 					
-					System.out.println("The time server receive order: " + body);
+					System.out.println("the time server receive order: " + body);
 					
 					String currentTime = "QUERY TIME ORDER".equalsIgnoreCase(body) ? (new Date()).toString() : "BAD ORDER";
 					
